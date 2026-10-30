@@ -1,0 +1,47 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: [self-hosted, antautomobile-vps]
+    timeout-minutes: 15
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Dependencies
+        run: npm ci --no-audit --no-fund --loglevel=error
+
+      - name: Build
+        run: npm run build
+
+      - name: Trace check
+        run: |
+          bad=0
+          if find dist -name '*.map' | grep -q .; then echo "sourcemap present"; bad=1; fi
+          if grep -rl 'sourceMappingURL' dist; then echo "sourceMappingURL present"; bad=1; fi
+          if grep -l '<!--' $(find dist -name '*.html'); then echo "HTML comment present"; bad=1; fi
+          exit $bad
+
+      - name: Compressed copies
+        run: |
+          find dist -type f \( -name '*.js' -o -name '*.css' -o -name '*.html' -o -name '*.glb' -o -name '*.svg' -o -name '*.xml' -o -name '*.txt' \) \
+            -exec gzip -9 -k -f -n {} \;
+
+      - name: Publish
+        run: |
+          umask 002
+          rsync -rl --checksum --no-perms --omit-dir-times --delete dist/ /var/www/antautomobile/
