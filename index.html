@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ANT Automobile</title>
+  <meta name="description" content="ANT Automobile is a student engineering team designing electric vehicles with its own know-how. With our first car we are competing in the Elektromobil category of the TEKNOFEST 2027 Efficiency Challenge." />
+  <meta name="theme-color" content="#EDEFEE" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0B0E0D" media="(prefers-color-scheme: dark)" />
+  <link rel="canonical" href="https://antautomobile.org/" />
+  <link rel="alternate" hreflang="en" href="https://antautomobile.org/" />
+  <link rel="alternate" hreflang="tr" href="https://antautomobile.org/tr/" />
+  <link rel="alternate" hreflang="x-default" href="https://antautomobile.org/" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/img/favicon.png" />
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ANT Automobile" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="tr_TR" />
+  <meta property="og:url" content="https://antautomobile.org/" />
+  <meta property="og:title" content="ANT Automobile" />
+  <meta property="og:description" content="A student engineering team designing electric vehicles with its own know-how. TEKNOFEST 2027 Elektromobil." />
+  <meta property="og:image" content="https://antautomobile.org/img/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="ANT Automobile logo and a design render of the car" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preload" as="image" href="/img/car-on34.webp" />
+  <script>
+    try { var t = localStorage.getItem('ant-theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+
+  <!-- Gösterge paneli: menü + aktif bölüm ibresi -->
+  <header class="cluster" id="cluster">
+    <div class="cluster__inner">
+      <a class="brand" href="#top" aria-label="ANT Automobile, back to top">
+        <img class="brand__mark brand__mark--light" src="/img/icon-light.webp" alt="" width="28" height="28" />
+        <img class="brand__mark brand__mark--dark" src="/img/icon-dark.webp" alt="" width="28" height="28" />
+        <span class="brand__word">ANT <span>Automobile</span></span>
+      </a>
+      <nav class="gears" aria-label="Sections">
+        <span class="gears__needle" aria-hidden="true"></span>
+        <span class="gears__mark" aria-hidden="true"></span>
+        <a href="#about" data-gear="about">About</a>
+        <a href="#vision" data-gear="vision">Vision</a>
+        <a href="#mission" data-gear="mission">Mission</a>
+        <a href="#values" data-gear="values">Values</a>
+        <a href="#journey" data-gear="journey">Journey</a>
+        <a href="#team" data-gear="team">Team</a>
+      </nav>
+      <div class="cluster__end">
+        <a class="lang-btn" href="/tr/" hreflang="tr" lang="tr" data-lang="tr" data-a-event="lang_switch" data-a-param-to="tr" aria-label="Türkçe sürüm">TR</a>
+        <button class="theme-btn" type="button" id="themeBtn" aria-label="Toggle theme">
+          <i class="ph-light ph-sun-dim" aria-hidden="true"></i>
+        </button>
+        <a class="btn btn--solid btn--sm" href="#contact">Contact</a>
+        <button class="menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="mobileNav" aria-label="Menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="odo" aria-hidden="true"><span class="odo__fill" id="odoFill"></span></div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Sections (mobile)" hidden>
+      <a href="#about">About</a><a href="#vision">Vision</a><a href="#mission">Mission</a><a href="#values">Values</a>
+      <a href="#journey">Journey</a><a href="#team">Team</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="content">
+    <!-- HERO: kontak açılışı, önce farlar sonra stüdyo ışığı -->
+    <section class="hero" id="top">
+      <div class="hero__copy">
+        <p class="eyebrow">TEKNOFEST 2027 · Elektromobil</p>
+        <h1 class="hero__title">Less energy, further ahead.</h1>
+        <p class="hero__lede">ANT Automobile is a student engineering team designing electric vehicles with its own know-how.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--solid" href="#about">Meet us <i class="ph-light ph-arrow-down-right" aria-hidden="true"></i></a>
+          <a class="btn btn--ghost" href="#support">Sponsorship</a>
+        </div>
+      </div>
+      <figure class="hero__visual">
+        <div class="stage" id="stage">
+          <span class="stage__floor" aria-hidden="true"></span>
+          <div class="car" id="heroCar">
+            <img class="car__img" src="/img/car-on34.webp" alt="Light blue-grey design render of the ANT Automobile electric car, front three-quarter view" width="2202" height="938" fetchpriority="high" />
+            <span class="car__sheen" aria-hidden="true"></span>
+            <span class="car__drl car__drl--main" aria-hidden="true"></span>
+            <span class="car__drl car__drl--side" aria-hidden="true"></span>
+          </div>
+        </div>
+        <figcaption>Design render</figcaption>
+      </figure>
+    </section>
+
+    <!-- Kimlik okumaları: mekanik sayaç -->
+    <section class="readings" aria-label="ANT Automobile at a glance">
+      <dl class="readings__grid">
+        <div class="reading">
+          <dt>Team members</dt>
+          <dd><span class="odometer" data-value="6"></span></dd>
+        </div>
+        <div class="reading">
+          <dt>First race</dt>
+          <dd><span class="odometer" data-value="2027"></span><span class="unit">TEKNOFEST</span></dd>
+        </div>
+        <div class="reading">
+          <dt>Drivetrain</dt>
+          <dd><span class="odometer" data-value="100%"></span><span class="unit">electric</span></dd>
+        </div>
+        <div class="reading">
+          <dt>Tailpipe emissions</dt>
+          <dd><span class="odometer" data-value="0"></span><span class="unit">g/km</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- HAKKIMIZDA: parçalardan araca montaj (3B CAD) -->
+    <section class="about" id="about">
+      <div class="about__pin" id="aboutPin">
+        <div class="about__copy">
+          <h2 class="h2">Parts alone are not a car.</h2>
+          <p class="lede">ANT Automobile is a student team that brings mechanics, electronics and software to the same table. We design every part of our car ourselves and back every decision with measurement.</p>
+          <p class="lede">Our first car is a two-seat, four-wheel electric city car. With it, we will race in the Elektromobil category of the TEKNOFEST 2027 Efficiency Challenge.</p>
+          <p class="about__status" aria-hidden="true"><span id="assemblyLabel">Assembly</span><span id="assemblyPct">0%</span></p>
+        </div>
+        <div class="viewer" id="viewer">
+          <canvas id="viewerCanvas" aria-label="3D model of our car coming together from its parts"></canvas>
+          <div class="viewer__loading" id="viewerLoading">
+            <span class="viewer__bar"><span id="viewerProgress"></span></span>
+          </div>
+          <img class="viewer__fallback" src="/img/car-on34.webp" alt="Design render of our car" hidden />
+        </div>
+      </div>
+    </section>
+
+    <!-- VİZYON: far ışığı kelimeleri tek tek aydınlatır -->
+    <section class="vision section" id="vision">
+      <div class="wrap">
+        <p class="eyebrow">Our vision</p>
+        <p class="vision__text" id="visionText">To become an engineering community in Türkiye that creates its own knowledge of electric mobility, designs its own vehicles and passes that knowledge on to the next generation.</p>
+      </div>
+    </section>
+
+    <!-- MİSYON: rota üzerinde ara noktalar -->
+    <section class="mission section" id="mission">
+      <div class="wrap">
+        <p class="eyebrow">Our mission</p>
+        <h2 class="h2">To build a real car, from start to finish, with our own hands.</h2>
+        <div class="route" id="route">
+          <svg class="route__svg" id="routeSvg" viewBox="0 0 1200 150" preserveAspectRatio="none" aria-hidden="true">
+            <path class="route__base" id="routeBase" d="M6 120 C 260 120, 340 30, 600 30 S 940 120, 1194 120" />
+            <path class="route__lit" id="routeLit" d="M6 120 C 260 120, 340 30, 600 30 S 940 120, 1194 120" />
+          </svg>
+          <span class="route__car" id="routeCar" aria-hidden="true"></span>
+          <ol class="route__stops">
+            <li class="stop" data-at="0">
+              <h3 class="h3">Putting efficiency at the heart of design</h3>
+              <p>Designing cars that know the energy cost of every decision and go further on fewer resources.</p>
+            </li>
+            <li class="stop" data-at="0.5">
+              <h3 class="h3">Developing our own technology</h3>
+              <p>Designing the car's control and battery electronics within the team instead of leaning on off-the-shelf solutions.</p>
+            </li>
+            <li class="stop" data-at="1">
+              <h3 class="h3">Making knowledge last</h3>
+              <p>Documenting everything we learn, so the next team starts where we left off, not from scratch.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEĞERLER: her değer bir kalibrasyon göstergesi -->
+    <section class="values section" id="values">
+      <div class="wrap">
+        <h2 class="h2">Four principles that guide us</h2>
+        <ul class="gauges">
+          <li class="gauge" tabindex="0">
+            <span class="gauge__dial" aria-hidden="true"><span class="gauge__needle"></span></span>
+            <div>
+              <h3 class="h3">Honest measurement</h3>
+              <p>We never claim what we have not measured. We always keep estimates and evidence apart.</p>
+            </div>
+          </li>
+          <li class="gauge" tabindex="0">
+            <span class="gauge__dial" aria-hidden="true"><span class="gauge__needle"></span></span>
+            <div>
+              <h3 class="h3">Safety first</h3>
+              <p>We don't add safety later; we build it in from the very first line of the design.</p>
+            </div>
+          </li>
+          <li class="gauge" tabindex="0">
+            <span class="gauge__dial" aria-hidden="true"><span class="gauge__needle"></span></span>
+            <div>
+              <h3 class="h3">Precision</h3>
+              <p>We know small details lead to big outcomes. Every part we choose has a reason.</p>
+            </div>
+          </li>
+          <li class="gauge" tabindex="0">
+            <span class="gauge__dial" aria-hidden="true"><span class="gauge__needle"></span></span>
+            <div>
+              <h3 class="h3">Building together</h3>
+              <p>A car emerges when different disciplines work toward the same goal. We share knowledge rather than keep it.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ÇALIŞMA ALANLARI: aracın katmanları (patlatılmış cam plakalar) -->
+    <section class="layers section" id="areas">
+      <div class="wrap layers__grid">
+        <div>
+          <h2 class="h2">We work on every layer that makes up a car.</h2>
+          <ol class="layers__list" id="layersList">
+            <li><button type="button" data-layer="0" class="is-active"><span>Body and design</span><small>The car's shape, structure and driver safety</small></button></li>
+            <li><button type="button" data-layer="1"><span>Mechanical systems</span><small>Chassis, suspension, brakes and steering</small></button></li>
+            <li><button type="button" data-layer="2"><span>Power and energy</span><small>Battery, motor and power electronics</small></button></li>
+            <li><button type="button" data-layer="3"><span>Control and software</span><small>Vehicle control unit, simulation and driving strategy</small></button></li>
+          </ol>
+        </div>
+        <div class="layers3d" id="stack">
+          <canvas id="layersCanvas" aria-label="3D model of the car split into its layers"></canvas>
+          <img class="layers3d__fallback" src="/img/car-ust.webp" alt="" hidden />
+        </div>
+      </div>
+    </section>
+
+    <!-- YOLCULUK: fikirden piste ilerleme hattı -->
+    <section class="journey section" id="journey">
+      <div class="wrap">
+        <h2 class="h2">From idea to track.</h2>
+        <figure class="journey__frame" id="journeyFrame">
+          <span class="journey__floor" aria-hidden="true"></span>
+          <div class="rear" id="rear">
+            <img src="/img/car-arka.webp" alt="Design render of our car from the rear" width="1500" height="984" loading="lazy" />
+            <span class="rear__lamp rear__lamp--l" aria-hidden="true"></span>
+            <span class="rear__lamp rear__lamp--r" aria-hidden="true"></span>
+          </div>
+        </figure>
+        <div class="track" id="track">
+          <span class="track__rail" aria-hidden="true"><span class="track__fill" id="trackFill"></span><span class="track__now" id="trackNow">Now</span></span>
+          <ol class="milestones">
+            <li class="is-done"><b>Idea</b><span>We studied the rules and decided to design the car around a single criterion.</span><em>Done</em></li>
+            <li class="is-done"><b>Design</b><span>We modelled and analysed the entire car digitally.</span><em>Done</em></li>
+            <li class="is-next"><b>Prototype</b><span>We are preparing for production to turn the design into a real car.</span><em>Next</em></li>
+            <li><b>Track</b><span>Testing the car and racing at TEKNOFEST 2027.</span><em>Goal</em></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- EKİP: CAN hattına bağlı modüller -->
+    <section class="team section" id="team">
+      <div class="wrap">
+        <p class="eyebrow">Team</p>
+        <h2 class="h2">Six people, one car.</h2>
+        <div class="bus" id="bus">
+          <span class="bus__line" aria-hidden="true"><span class="bus__pulse"></span></span>
+          <ul class="bus__nodes">
+            <li class="node"><span class="node__name">Ömer Ziya Atmacı</span><a class="node__mail" href="mailto:omerziyaatmaci@antautomobile.org">omerziyaatmaci<wbr>@antautomobile.org</a></li>
+            <li class="node"><span class="node__name">Cem Yılmaz</span><a class="node__mail" href="mailto:cemyilmaz@antautomobile.org">cemyilmaz<wbr>@antautomobile.org</a></li>
+            <li class="node"><span class="node__name">Kadir Can Kahraman</span><a class="node__mail" href="mailto:kadircankahraman@antautomobile.org">kadircankahraman<wbr>@antautomobile.org</a></li>
+            <li class="node"><span class="node__name">Tuğra Çimen</span><a class="node__mail" href="mailto:tugracimen@antautomobile.org">tugracimen<wbr>@antautomobile.org</a></li>
+            <li class="node"><span class="node__name">Bilal Örnek</span><a class="node__mail" href="mailto:bilalornek@antautomobile.org">bilalornek<wbr>@antautomobile.org</a></li>
+            <li class="node"><span class="node__name">Fatih Piltan</span><a class="node__mail" href="mailto:fatihpiltan@antautomobile.org">fatihpiltan<wbr>@antautomobile.org</a></li>
+          </ul>
+        </div>
+        <div class="advisor"><span class="advisor__role">Faculty advisor</span><span class="node__name">Ömer Tarhan</span><a class="node__mail" href="mailto:omertarhan@antautomobile.org">omertarhan<wbr>@antautomobile.org</a></div>
+      </div>
+    </section>
+
+    <!-- DESTEK: şarj bağlantısı -->
+    <section class="support section" id="support">
+      <div class="wrap support__grid">
+        <div>
+          <h2 class="h2">Join us on this journey.</h2>
+          <p class="lede">Our design is ready. To turn it into a car that runs on the track, we are looking for support from institutions and sponsors.</p>
+          <a class="plug" href="#contact" data-subject="Sponsorship" data-a-event="sponsor_cta">
+            <span class="plug__label">Get in touch</span>
+            <span class="plug__meter" aria-hidden="true"><span class="plug__fill"></span></span>
+            <i class="ph-light ph-plugs-connected" aria-hidden="true"></i>
+          </a>
+        </div>
+        <ul class="perks">
+          <li><i class="ph-light ph-eye" aria-hidden="true"></i><div><b>Visibility</b><span>At Türkiye's largest technology festival, on the car and alongside the team.</span></div></li>
+          <li><i class="ph-light ph-cpu" aria-hidden="true"></i><div><b>Domestic technology</b><span>Documented know-how in electric vehicle electronics that stays in the country.</span></div></li>
+          <li><i class="ph-light ph-users-three" aria-hidden="true"></i><div><b>Emerging engineers</b><span>A chance to meet young engineers who have built a real system end to end.</span></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- İLETİŞİM: kanal açma -->
+    <section class="contact section" id="contact">
+      <div class="wrap contact__grid">
+        <div class="contact__copy">
+          <!-- Wolti başlıktaki noktanın yerinde durur, son harfe yaslanır; form yazılırken bakar, hata olunca endişelenir, gönderince sevinir -->
+          <h2 class="h2 contact__title">Write to <span class="contact__last">us<span class="wolti" id="wolti" aria-hidden="true"></span></span></h2>
+          <p class="lede">For sponsorship, press or academic collaboration. Your message reaches the whole team directly.</p>
+          <a class="contact__addr" href="mailto:info@antautomobile.org">info@antautomobile.org</a>
+          <div class="social">
+            <p class="eyebrow">Our social media</p>
+            <a class="social__link" href="https://www.linkedin.com/company/ant-automobile/" data-a-event="social_click" data-a-param-network="linkedin" data-a-param-place="contact" target="_blank" rel="noopener noreferrer" aria-label="ANT Automobile on LinkedIn (opens in a new tab)">
+              <span class="social__mark"><i class="ph-light ph-linkedin-logo" aria-hidden="true"></i></span>
+              <span class="social__text"><b>LinkedIn</b><span>/company/ant-automobile</span></span>
+              <i class="ph-light ph-arrow-up-right social__go" aria-hidden="true"></i>
+            </a>
+            <a class="social__link" href="https://www.instagram.com/ant.automobile/" data-a-event="social_click" data-a-param-network="instagram" data-a-param-place="contact" target="_blank" rel="noopener noreferrer" aria-label="ANT Automobile on Instagram (opens in a new tab)">
+              <span class="social__mark"><i class="ph-light ph-instagram-logo" aria-hidden="true"></i></span>
+              <span class="social__text"><b>Instagram</b><span>@ant.automobile</span></span>
+              <i class="ph-light ph-arrow-up-right social__go" aria-hidden="true"></i>
+            </a>
+            <a class="social__link" href="https://x.com/ant_automobile" data-a-event="social_click" data-a-param-network="x" data-a-param-place="contact" target="_blank" rel="noopener noreferrer" aria-label="ANT Automobile on X (opens in a new tab)">
+              <span class="social__mark"><i class="ph-light ph-x-logo" aria-hidden="true"></i></span>
+              <span class="social__text"><b>X</b><span>@ant_automobile</span></span>
+              <i class="ph-light ph-arrow-up-right social__go" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="channel" id="channel" aria-live="polite" hidden></div>
+        </div>
+        <form class="form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="f-name">Full name</label>
+            <input id="f-name" name="name" autocomplete="name" required aria-describedby="e-name" />
+            <p class="field__err" id="e-name"></p>
+          </div>
+          <div class="field">
+            <label for="f-org">Organisation <span class="opt">(optional)</span></label>
+            <input id="f-org" name="org" autocomplete="organization" />
+          </div>
+          <div class="field">
+            <label for="f-mail">Email</label>
+            <input id="f-mail" name="email" type="email" autocomplete="email" required aria-describedby="e-mail" />
+            <p class="field__err" id="e-mail"></p>
+          </div>
+          <div class="field">
+            <label for="f-topic">Subject</label>
+            <select id="f-topic" name="topic">
+              <option>Sponsorship</option><option>Press</option><option>Academic collaboration</option><option>Other</option>
+            </select>
+          </div>
+          <div class="field field--wide">
+            <label for="f-msg">Message</label>
+            <textarea id="f-msg" name="message" rows="5" required aria-describedby="e-msg"></textarea>
+            <p class="field__err" id="e-msg"></p>
+          </div>
+          <div class="field field--wide field--check">
+            <label class="check" for="f-kvkk">
+              <input id="f-kvkk" name="kvkk" type="checkbox" required aria-describedby="e-kvkk" />
+              <span>I have read the <a href="/privacy/" target="_blank" rel="noopener">Privacy Notice</a> and have been informed how my personal data will be processed.</span>
+            </label>
+            <p class="field__err" id="e-kvkk"></p>
+          </div>
+          <div class="form__foot">
+            <button class="btn btn--solid" type="submit">Send <i class="ph-light ph-paper-plane-tilt" aria-hidden="true"></i></button>
+            <p class="small">Your email app opens with your message ready to send.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="standby" id="standby">
+    <div class="wrap standby__grid">
+      <div class="standby__brand">
+        <img class="brand__mark--light" src="/img/logo-light.webp" alt="ANT Automobile" width="72" height="94" loading="lazy" />
+        <img class="brand__mark--dark" src="/img/logo-dark.webp" alt="ANT Automobile" width="72" height="94" loading="lazy" />
+        <p class="small">TEKNOFEST 2027 International Efficiency Challenge Electric Vehicle Races, Elektromobil category.</p>
+      </div>
+      <nav class="standby__nav" aria-label="Footer menu">
+        <a href="#about">About</a><a href="#vision">Vision</a><a href="#mission">Mission</a><a href="#values">Values</a>
+        <a href="#areas">Focus areas</a><a href="#journey">Journey</a><a href="#team">Team</a><a href="#support">Sponsorship</a>
+      </nav>
+    </div>
+    <div class="wrap standby__bar">
+      <span class="standby__copy">© 2027 ANT Automobile</span>
+      <nav class="standby__legal" aria-label="Legal">
+        <a href="/privacy/">Privacy Notice</a><a href="/cookies/">Cookie Policy</a><button type="button" data-consent-open>Cookie settings</button>
+      </nav>
+      <a class="standby__social" href="https://www.linkedin.com/company/ant-automobile/" data-a-event="social_click" data-a-param-network="linkedin" data-a-param-place="footer" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="ph-light ph-linkedin-logo" aria-hidden="true"></i></a>
+      <a class="standby__social" href="https://www.instagram.com/ant.automobile/" data-a-event="social_click" data-a-param-network="instagram" data-a-param-place="footer" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="ph-light ph-instagram-logo" aria-hidden="true"></i></a>
+      <a class="standby__social" href="https://x.com/ant_automobile" data-a-event="social_click" data-a-param-network="x" data-a-param-place="footer" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="ph-light ph-x-logo" aria-hidden="true"></i></a>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

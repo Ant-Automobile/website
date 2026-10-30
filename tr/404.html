@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="tr" data-a-page="404">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Sayfa bulunamadı · ANT Automobile</title>
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#EDEFEE" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0B0E0D" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/img/favicon.png" />
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+  <script type="module" src="/src/pit/notfound.js"></script>
+</head>
+<body>
+  <main class="pit pit--404">
+    <header class="pit__bar">
+      <a class="pit__brand" href="/tr/" aria-label="ANT Automobile ana sayfa">
+        <img class="pit__brand__mark pit__brand__mark--light" src="/img/icon-light.webp" alt="" width="28" height="28" />
+        <img class="pit__brand__mark pit__brand__mark--dark" src="/img/icon-dark.webp" alt="" width="28" height="28" />
+        <span class="pit__brand__word">ANT <span>Automobile</span></span>
+      </a>
+      <nav class="pit__tools" aria-label="Dil">
+        <a class="chip" href="/tr/" aria-current="page" lang="tr">TR</a>
+        <a class="chip" href="/" lang="en">EN</a>
+      </nav>
+    </header>
+
+    <section class="pit__hero">
+      <div class="pit__wolti nf__wolti" id="wolti"></div>
+      <div class="pit__copy">
+        <span class="pit__eyebrow"><span class="nf__code">404</span>Sayfa bulunamadı</span>
+        <h1>Bu yol haritada yok.</h1>
+        <p class="pit__lead">Aradığın sayfa taşınmış, adı değişmiş ya da hiç var olmamış olabilir. Wolti de yolu şaşırdı; ana sayfaya birlikte dönelim.</p>
+        <p class="nf__path mono"><span class="nf__pin" aria-hidden="true"></span><span id="path"></span></p>
+        <div class="pit__actions">
+          <a class="btn" href="/tr/">Ana sayfaya dön</a>
+          <button class="btn btn--ghost" id="play" type="button">Bir tur at</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="pit__stack">
+      <nav class="nf__links" aria-label="Sık ziyaret edilenler">
+        <a href="/tr/#hakkimizda"><span class="mono">01</span>Hakkımızda</a>
+        <a href="/tr/#alanlar"><span class="mono">02</span>Çalışma alanları</a>
+        <a href="/tr/#ekip"><span class="mono">03</span>Ekip</a>
+        <a href="/tr/#iletisim"><span class="mono">04</span>İletişim</a>
+      </nav>
+
+      <section class="game" id="game-card" aria-label="Wolti koşu oyunu" hidden>
+        <canvas id="game" width="800" height="210"></canvas>
+        <div class="game__foot">
+          <span class="game__keys">
+            <strong>Kestirme yol yok ama oyun var</strong>
+            <span class="hide-touch"><span class="kbd">Space / ↑</span>zıpla</span>
+            <span class="hide-touch"><span class="kbd">↓</span>eğil</span>
+            <span class="hide-touch"><span class="kbd">M</span>ses</span>
+            <span class="show-touch">Dokun: zıpla · aşağı kaydır: eğil</span>
+          </span>
+          <button class="chip" id="sound" type="button">Ses açık</button>
+        </div>
+      </section>
+    </div>
+
+    <footer class="pit__foot">
+      <span>Bir bağlantı bozuksa bize yaz: <a href="mailto:info@antautomobile.org">info@antautomobile.org</a></span>
+      <span><a href="/tr/kvkk/">KVKK Aydınlatma Metni</a> · <a href="/tr/cerez-politikasi/">Çerez Politikası</a> · <button type="button" class="linkbtn" data-consent-open>Çerez tercihleri</button></span>
+    </footer>
+  </main>
+</body>
+</html>

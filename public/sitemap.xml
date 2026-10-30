@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://antautomobile.org/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://antautomobile.org/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://antautomobile.org/tr/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://antautomobile.org/" />
+  </url>
+  <url>
+    <loc>https://antautomobile.org/tr/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://antautomobile.org/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://antautomobile.org/tr/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://antautomobile.org/" />
+  </url>
+  <url>
+    <loc>https://antautomobile.org/privacy/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://antautomobile.org/privacy/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://antautomobile.org/tr/kvkk/" />
+  </url>
+  <url>
+    <loc>https://antautomobile.org/tr/kvkk/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://antautomobile.org/privacy/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://antautomobile.org/tr/kvkk/" />
+  </url>
+  <url>
+    <loc>https://antautomobile.org/cookies/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://antautomobile.org/cookies/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://antautomobile.org/tr/cerez-politikasi/" />
+  </url>
+  <url>
+    <loc>https://antautomobile.org/tr/cerez-politikasi/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://antautomobile.org/cookies/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://antautomobile.org/tr/cerez-politikasi/" />
+  </url>
+</urlset>

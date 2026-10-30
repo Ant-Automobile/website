@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="__LANG__">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ANT Automobile</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#EDEFEE" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B0E0D" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="__FAVICON__">
+<style>__FONTS__
+__CSS__</style>
+</head>
+<body>
+<main class="pit">
+  <header class="pit__bar">
+    <a class="pit__brand" href="https://antautomobile.org/" aria-label="ANT Automobile">
+        <img class="pit__brand__mark pit__brand__mark--light" src="__ICON_LIGHT__" alt="" width="28" height="28" />
+        <img class="pit__brand__mark pit__brand__mark--dark" src="__ICON_DARK__" alt="" width="28" height="28" />
+        <span class="pit__brand__word">ANT <span>Automobile</span></span>
+    </a>
+    <div class="pit__tools">
+      <button class="chip" id="lang-tr" type="button" aria-pressed="false" lang="tr">TR</button>
+      <button class="chip" id="lang-en" type="button" aria-pressed="false" lang="en">EN</button>
+    </div>
+  </header>
+
+  <section class="pit__hero" aria-live="polite">
+    <div class="pit__wolti" id="wolti"></div>
+    <div class="pit__copy">
+      <span class="pit__eyebrow"><span class="lamp" id="lamp"></span><span id="eyebrow-text"></span></span>
+      <h1 id="title"></h1>
+      <p class="pit__lead" id="lead"></p>
+      <div class="pit__actions" id="actions" hidden></div>
+    </div>
+  </section>
+
+  <div class="pit__stack">
+    <dl class="pit__telemetry" id="telemetry" hidden>
+      <div><dt id="t-service-k"></dt><dd id="t-service"></dd></div>
+      <div><dt id="t-status-k"></dt><dd id="t-status"></dd></div>
+      <div><dt id="t-check-k"></dt><dd class="mono" id="t-check"></dd></div>
+    </dl>
+
+    <section class="game" aria-labelledby="game-title">
+      <canvas id="game" width="800" height="210"></canvas>
+      <div class="game__foot">
+        <span class="game__keys" id="keys">
+          <strong id="game-title"></strong>
+          <span class="hide-touch" data-k><span class="kbd">Space / ↑</span>zıpla</span>
+          <span class="hide-touch" data-k><span class="kbd">↓</span>eğil</span>
+          <span class="hide-touch" data-k><span class="kbd">M</span>ses</span>
+          <span class="show-touch" id="touch"></span>
+        </span>
+        <button class="chip" id="sound" type="button"></button>
+      </div>
+    </section>
+  </div>
+
+  <footer class="pit__foot">
+    <span><span id="mail-text"></span> <a href="mailto:info@antautomobile.org">info@antautomobile.org</a></span>
+    <span id="legal"></span>
+  </footer>
+</main>
+<script>__JS__</script>
+</body>
+</html>

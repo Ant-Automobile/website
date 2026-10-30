@@ -1,0 +1,7 @@
+# ANT Automobile güvenlik bildirimi / security contact
+# Sitelerimizde (antautomobile.org ve alt alan adları) bir güvenlik açığı bulduysanız lütfen bize yazın.
+# If you found a security issue on antautomobile.org or any of its subdomains, please write to us.
+Contact: mailto:info@antautomobile.org
+Expires: 2027-10-23T00:00:00.000Z
+Preferred-Languages: tr, en
+Canonical: https://antautomobile.org/.well-known/security.txt

@@ -1,0 +1,12 @@
+{
+  "name": "site-glb",
+  "private": true,
+  "type": "module",
+  "description": "CAD arac_tam.glb → site GLB (malzeme başına tek düğüm, normalsiz, meshopt q16). Kullanım: npm i && node build.mjs <kaynak.glb> ../../public/models/arac_tam.glb",
+  "dependencies": {
+    "@gltf-transform/core": "^4.5.1",
+    "@gltf-transform/extensions": "^4.5.1",
+    "@gltf-transform/functions": "^4.5.1",
+    "meshoptimizer": "^1.3.0"
+  }
+}

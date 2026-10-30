@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" data-a-page="404">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Page not found · ANT Automobile</title>
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#EDEFEE" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0B0E0D" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/img/favicon.png" />
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+  <script type="module" src="/src/pit/notfound.js"></script>
+</head>
+<body>
+  <main class="pit pit--404">
+    <header class="pit__bar">
+      <a class="pit__brand" href="/" aria-label="ANT Automobile home">
+        <img class="pit__brand__mark pit__brand__mark--light" src="/img/icon-light.webp" alt="" width="28" height="28" />
+        <img class="pit__brand__mark pit__brand__mark--dark" src="/img/icon-dark.webp" alt="" width="28" height="28" />
+        <span class="pit__brand__word">ANT <span>Automobile</span></span>
+      </a>
+      <nav class="pit__tools" aria-label="Language">
+        <a class="chip" href="/tr/" lang="tr">TR</a>
+        <a class="chip" href="/" aria-current="page" lang="en">EN</a>
+      </nav>
+    </header>
+
+    <section class="pit__hero">
+      <div class="pit__wolti nf__wolti" id="wolti"></div>
+      <div class="pit__copy">
+        <span class="pit__eyebrow"><span class="nf__code">404</span>Page not found</span>
+        <h1>This road is not on the map.</h1>
+        <p class="pit__lead">The page you are looking for may have moved, been renamed or never existed. Wolti got lost too, so let's head back to the home page together.</p>
+        <p class="nf__path mono"><span class="nf__pin" aria-hidden="true"></span><span id="path"></span></p>
+        <div class="pit__actions">
+          <a class="btn" href="/">Back to the home page</a>
+          <button class="btn btn--ghost" id="play" type="button">Take a lap</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="pit__stack">
+      <nav class="nf__links" aria-label="Popular pages">
+        <a href="/#about"><span class="mono">01</span>About us</a>
+        <a href="/#areas"><span class="mono">02</span>What we work on</a>
+        <a href="/#team"><span class="mono">03</span>Team</a>
+        <a href="/#contact"><span class="mono">04</span>Contact</a>
+      </nav>
+
+      <section class="game" id="game-card" aria-label="Wolti runner game" hidden>
+        <canvas id="game" width="800" height="210"></canvas>
+        <div class="game__foot">
+          <span class="game__keys">
+            <strong>No shortcut here, but there is a game</strong>
+            <span class="hide-touch"><span class="kbd">Space / ↑</span>jump</span>
+            <span class="hide-touch"><span class="kbd">↓</span>duck</span>
+            <span class="hide-touch"><span class="kbd">M</span>sound</span>
+            <span class="show-touch">Tap: jump · swipe down: duck</span>
+          </span>
+          <button class="chip" id="sound" type="button">Sound on</button>
+        </div>
+      </section>
+    </div>
+
+    <footer class="pit__foot">
+      <span>Found a broken link? Write to us: <a href="mailto:info@antautomobile.org">info@antautomobile.org</a></span>
+      <span><a href="/privacy/">Privacy Notice</a> · <a href="/cookies/">Cookie Policy</a> · <button type="button" class="linkbtn" data-consent-open>Cookie settings</button></span>
+    </footer>
+  </main>
+</body>
+</html>

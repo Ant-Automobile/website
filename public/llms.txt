@@ -1,0 +1,30 @@
+# ANT Automobile
+
+> ANT Automobile is a student engineering team in Türkiye that designs electric vehicles with its own know-how. Its first car, a two-seat, four-wheel electric city car, will race in the Elektromobil category of the TEKNOFEST 2027 Efficiency Challenge (International Electric Vehicle Races). The website is available in English and Turkish.
+
+The team brings mechanics, electronics and software to the same table, designs every part of the car itself and backs every decision with measurement.
+
+- Vision: to become an engineering community in Türkiye that creates its own knowledge of electric mobility, designs its own vehicles and passes that knowledge on to the next generation.
+- Mission: to build a real car from start to finish with our own hands; to put efficiency at the heart of the design; to design the car's control and battery electronics within the team; to document everything so the next team starts where we left off.
+- Values: honest measurement, safety first, precision, building together.
+- Work areas: body and design; mechanical systems (chassis, suspension, brakes, steering); power and energy (battery, motor, power electronics); control and software (vehicle control unit, simulation, driving strategy).
+- Status (October 2026): the rules have been studied and the whole car has been modelled and analysed digitally; the team is preparing the prototype for production. Next: track testing and racing at TEKNOFEST 2027.
+- Team: Ömer Ziya Atmacı, Cem Yılmaz, Kadir Can Kahraman, Tuğra Çimen, Bilal Örnek, Fatih Piltan. Faculty advisor: Ömer Tarhan (omertarhan@antautomobile.org).
+- Sponsorship: the team is looking for support from institutions and sponsors. Sponsors get visibility at Türkiye's largest technology festival, on the car and alongside the team.
+- Contact: info@antautomobile.org (sponsorship, press, academic collaboration). Privacy requests: kvkk@antautomobile.org.
+- Mascot: Wolti, a small charging socket with antennae, derived from the ANT logo.
+
+## Pages
+
+- [Home (English)](https://antautomobile.org/): about, vision, mission, values, work areas, journey, team, sponsorship, contact
+- [Ana sayfa (Türkçe)](https://antautomobile.org/tr/): the same content in Turkish
+- [Privacy Notice](https://antautomobile.org/privacy/): GDPR and KVKK privacy notice
+- [Cookie Policy](https://antautomobile.org/cookies/)
+- [KVKK Aydınlatma Metni](https://antautomobile.org/tr/kvkk/): Turkish privacy notice
+- [Çerez Politikası](https://antautomobile.org/tr/cerez-politikasi/): Turkish cookie policy
+
+## Social media
+
+- [LinkedIn](https://www.linkedin.com/company/ant-automobile/)
+- [Instagram](https://www.instagram.com/ant.automobile/)
+- [X](https://x.com/ant_automobile)
